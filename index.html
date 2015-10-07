@@ -45,21 +45,21 @@
         ctx.clearRect(0, 0, boardX, boardY);
 
         // Fill the board.
-        ctx.fillStyle = "thistle";
+        ctx.fillStyle = "while";
         ctx.beginPath();
         ctx.rect(0, 0, boardX, boardY);
         ctx.closePath();
         ctx.fill();
 
         // Draw a ball.
-        ctx.fillStyle = "tomato";
+        ctx.fillStyle = "thistle";
         ctx.beginPath();
         ctx.arc(ballX, ballY, 15, 0, Math.PI * 2, true);
         ctx.closePath();
         ctx.fill();
 
         // Draw the paddle.
-        ctx.fillStyle = "navy";
+        ctx.fillStyle = "red";
         ctx.beginPath();
         ctx.rect(paddleX, paddleD, paddleW, paddleH);
         ctx.closePath();
@@ -110,7 +110,7 @@
   
   <body onload="drawGameCanvas()">
     <h1>
-      Canvas Racquetball
+      Canvas Testing
     </h1>
     <div>
       <canvas id="gameBoard" width="300" height="300">
